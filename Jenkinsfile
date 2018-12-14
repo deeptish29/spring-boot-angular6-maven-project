@@ -12,7 +12,7 @@ pipeline {
 	}
 	    stage('Build') {
 		    steps {
-			    script{
+			    script {
 				     checkout scm
 		    try {
 			    
@@ -38,8 +38,8 @@ pipeline {
                         currentBuild.result = 'FAILURE'
                         sh "exit 1"
                     }
-			    }
-			    	}
+		}
+		}
         }
     }   
 }
