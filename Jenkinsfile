@@ -6,7 +6,6 @@ pipeline {
             steps {
                 script {
                     checkout scm
-			def mvnHome = tool 'MAVEN_3.1'
 			
 		}
 	    }
